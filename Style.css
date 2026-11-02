@@ -1,0 +1,72 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    color: #2b2b3a;
+    margin: 0;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+/* Chaque bloc devient une carte */
+body > div {
+    max-width: 780px;
+    margin: 0 auto 20px;
+    background: white;
+    padding: 22px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Le premier bloc : l'entête */
+body > div:first-child {
+    text-align: center;
+    background: linear-gradient(135deg, #1e1b4b, #6d28d9);
+    color: white;
+}
+
+h1 {
+    margin: 5px 0;
+    font-size: 2.8em;
+    letter-spacing: 6px;
+    color: #fde047;
+}
+
+h4 {
+    margin: 10px 0 0;
+    font-weight: normal;
+    color: #e9d5ff;
+}
+
+/* Titres des sections */
+h3 {
+    margin: 0 0 12px;
+    color: #7c3aed;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ec4899;
+    padding-bottom: 6px;
+}
+
+/* Le mot "titre" dans l'entête */
+body > div:first-child h3 {
+    color: #fde047;
+    border-bottom-color: #fde047;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+li::marker {
+    color: #ec4899;
+}
+
+.date {
+    font-weight: bold;
+    color: #db2777;
+}
